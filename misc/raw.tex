@@ -1,0 +1,113 @@
+\begin{Definition}{HTML}
+    -Definimos HTML como un lenguaje de estructura semántica de documento.
+\end{Definition}
+
+\begin{Definition}{DOM}
+    -Document Object Model $\implies $ Desarrollo web \\
+    Se define como el grafo $G = (V, E)$ de elementos visualizables en HTML
+\end{Definition}
+
+\textbf{Caso práctico}: Sea $(Y)$ y $S$ yo y el servidor respectivamente. Usando GET-messages 
+envio la solicitud de que quiero mis mensajes. Luego el servidor debiese en su motor interno gestionar la 
+solicitud y preparar el resultado ($S: JSON$). 
+\\
+\\ 
+El DOM lo construye ($Y$) después de recibir $JSON(S)$.
+\\ 
+\\
+Luego $Y: JSON \implies DOM \implies visualizar$
+\\
+\\
+\underline{\textbf{Quien debe paginar}}: Definimos el paginar como el proceso usual de cortar el JSON. 
+Debe hacerlo $(S)$. Podría hacerlo $(Y)$ pero no sería eficiente.
+
+\begin{Definition}{STATEFUL}
+    -Decimos que un servidor es STATEFUL si la tupla $(t_1, t_2, \dots, t_n)$
+    no influye sobre la acción $A$ a ejecutar en $t_n$. Los tokens por ejemplo, no dependen de $t_{n-1}$.
+    Buscar en la base de datos del server por diccionario/hash tampoco depende de $t_{n-k}$.
+\end{Definition}
+
+\begin{Definition}{REST}
+    -Estilo arquitectonico donde manipulo recursos usando protocolos HTTP.\\
+    Satisface GET, POST, PUT, DELETE. \\
+    Es $Stateless$.
+\end{Definition}
+
+\begin{Definition}{Entidad}
+    -Es un objeto del dominio. Tiene identidad propia y atributos.
+\end{Definition}
+
+\begin{Definition}{PUT}
+    -Es un método de REST. Lo que hace es \textbf{reemplazar} un recurso existente.
+\end{Definition}
+
+\begin{Definition}{CURSOR}
+    - Sea D un conjunto ordenado de datos. El cursor es un puntero a un dato especifico desde donde 
+    continuamos la lectura. \\
+    - Es un identificador de la posición en un conjunto de datos que permite
+    continuar la lectura desde un punto (punto especifico, no indice). 
+\end{Definition}
+
+Sea $D$ tal que se modifica en LIFO-STACK. $D$ es ordenado. 
+Definimos el cursor como $\{e_{j_\leq} \}$. Tal que si paso de $D$ a $D \cup e$
+$$ \implies \{ e_{j_{\leq}} \}_{e \cup D} = \{ e_\leq \}_{D} $$
+
+\begin{Definition}{OFFSET}
+    -Lo definimos de igual forma que Cursor solo que es sobre un indice. Es decir, si rellenamos por LIFO y ejecutamos
+    la accion va a devolver un set de datos distinto.
+\end{Definition}
+
+\begin{Lemma}{Pooling}
+    -Supongamos que queremos mantener una conexion instantanea. 
+    Un usuario necesita ver sus mensajes en vivo pese a que aun no llega ninguno. 
+    Puede ejecutar el GET. El servidor lo recibe. Lo deja en WAIT. Cuando llege un mensaje el 
+    servidor lo envia. (La conexion se puede dejar en standby)
+\end{Lemma}
+
+\begin{Definition}{WebSocket}
+    -Protocolo  de comunicacion TCP persistente (en vivo por harto rato) que es bidireccional
+\end{Definition}
+
+\begin{Definition}{HEAP}
+     - H es un arbol binario : H es min - heap $\iff$
+    $$ \forall x \in H: x.sons \geq x $$
+\end{Definition}
+Por definicion observar el minimo es $\mathcal{O}(1)$. 
+Extraer (es decir sacar y reordenar) es $\mathcal{O}(\log (n))$
+Insertar a su vez es $\mathcal{O}(log (n))$. 
+\begin{Lemma}{Insertion in HEAP}
+    - Para insertar en (min-HEAP). Se inserta en la ultima posicion disponible. 
+    Se usa el sig. algoritmo recursivo. 
+        $$while: \; if \; not \; check(x.father, x) \then swap(x.father, x)$$ \\
+    Es facil notar que la complejidad de esto es $\mathcal{\log(n)}$
+\end{Lemma}
+
+\subsection{Una aplicación de interés}
+Supongamos que tenemos un servicio de mensajes tal que cada mensaje es $M = (id, timestamp)$. Un mensaje $j$ es mas reciente que uno $i$ si:
+$$\iff t_i \leq t_j $$.
+Nos gustaria tener una estructura para siempre tener los $k$ mensajes más recientes. Uno podría pensar en un STACK pero los mensajes no llegan en 
+perfecto orden debido a la concurrencia. Lo que nos interesa es poder manejar eficientemente la inserción. Por lo tanto hacemos un MIN-HEAP(k). Es decir
+en la raíz va a estar el más viejo. Luego al insertar el $t_j$ basta comparar con la raíz (si es que el HEAP esta lleno). Popear la raíz, hacer heapify e 
+e insertar el $t_j$. Recordamos que las inserciones son $\mathcal{O}(\log(k))$. Si reordenasemos a cada rato el stack tendriamos $\mathcal{O}(k \log (k))$
+\\
+Ojo que construir un HEAP por heapify-downs es $\mathcal{O}(n)$
+
+\subsection{Un problema de interés - Requests per minute}
+Supongamos que tenemos mensajes (id, timestamp) que llegan de forma arbitraria. 
+Queremos que el server maneje solo 100 requests por minuto. Como lo hacemos.
+La solucion es una ventana continua. Es decir, en cada segundo el servidor contara hasta el minuto pasado 
+y solo mantendra los que caen en esa ventana. El resto chao. Esa ventana va a ser de tamaño 100. 
+\\
+Para escalar basta tomar REDIS con operaciones atomicas. Es decir colapsar el conteo a una operacion atomica.
+
+\begin{Definition}{LRU CACHE}
+    - Definimos el LRU como Least Recently Used. Es decir un stack de K elementos tal que
+    eliminamos la wea en mayor desuso. Tal que para cada atomo $a$ hay 2 metodos.
+    GET(key) y PUT(key, value)
+\end{Definition}
+¿Como eliminamos lo que esta en mayor desuso? Con una lista doble ligada. 
+
+\begin{Definition}{Lista doble ligada}
+    - Es una colección de elementos tal que cada elemento tiene $x.before$ y $x.after$
+\end{Definition}
+Mover elementos entre si en la lista doble ligada es $O(1)$. Depende del elemento solamente.
