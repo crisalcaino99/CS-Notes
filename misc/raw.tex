@@ -111,3 +111,51 @@ Para escalar basta tomar REDIS con operaciones atomicas. Es decir colapsar el co
     - Es una colección de elementos tal que cada elemento tiene $x.before$ y $x.after$
 \end{Definition}
 Mover elementos entre si en la lista doble ligada es $O(1)$. Depende del elemento solamente.
+
+\subsection{Algunas definiciones para modelar problemas}
+
+\begin{Definition}{Evento}
+    - $e = (event_id, payload, timestamp, ...)$ \\
+    $event_id(e_1) = event_id(e_2) \then e_1 \sim e_2 $
+\end{Definition}
+
+\begin{Definition}{Estado}
+    - $state \in S | f: \mathcal{S} \times \mathcal{E} \to \mathcal{S} $
+\end{Definition}
+
+\begin{Definition}{Invariantes}
+    - Definimos una invariante como una propiedad que debe mantenerse. 
+    La definimos a traves de ejemplos:
+    $$ \text{rate limiting} \then \# events(u, t-\Delta, t) \leq K $$
+    $$ \text{deduplicacion} \then \forall e: \sum_{e' \in [e]} f(e') = 1 $$
+    $$ \text{view counting} \then  \sum_{i \in I} c_i $$
+\end{Definition}
+
+\begin{Definition}{Sharding}
+    - Se define como una función de partición:
+    $$ S: \mathcal{K} \to \{1, \dots, N\}$$
+\end{Definition}
+
+La propiedad clave es que idealmente los datos relacionados caigan en el mismo shard.
+
+\begin{Definition}{Localidad}
+    - Una operación $f$ se define como local si:
+    $f(state)$ depende de un solo shard.
+\end{Definition}
+
+
+\begin{Definition}{Operación atómica}
+    - $f: \mathcal{S} \to \mathcal{S}$ tal que $f$ no es interrumpible.
+\end{Definition}
+
+\begin{Definition}{Idempotencia}
+    - $f : f(f(f(s))) = f(s)$
+\end{Definition}
+
+\subsection{Datos geoespaciales}
+
+Sea $P \subset \mathbb{R}^2$ tal que queremos 
+$$ find(p \in P: d(p, q) < r) $$ lo que debiese hacer es guardar las 
+cosas en una grilla. Centrarme en $q$. Extraer el cuadrado y empezar a filtrar. 
+Esto baja la complejidad de 
+$$\mathcal{O}(n) \to \mathcal{O}( \log(n) + k)  $$

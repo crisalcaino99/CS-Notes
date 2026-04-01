@@ -1,0 +1,36 @@
+\begin{Definition}{Probability space $(\Omega, \mathcal{F}, P)$}
+    -Donde $\mathcal{F}$ es una sigma algebra de $\Omega$.
+\end{Definition}
+
+\begin{Definition}{Función de probabilidad}
+    -$Pr: \mathcal{F} \to \reals$ que satisface que:
+    $$ \forall E \in \mathcal{F} : P(E) \in [0, 1]$$
+    $$ Pr(\Omega) = 1 $$
+    $$ (E_n)_{n \leq \naturals} : E_n \cap E_{n+1} = \emptyset \then P(\cup_{i \leq \naturals} E_i) = \sum_{i \leq \naturals} P(E_i) $$
+\end{Definition}
+
+\begin{Lemma}{Lema de la union}
+    - $E_1, E_2$ eventos arbitrarios:
+    $$ \then P(E_1 \cup E_2) = P(E_1) + P(E_2) - P(E_1 \cap E_2) $$
+\end{Lemma}
+
+\begin{Lemma}{Lema de la union extendida}
+    - $E_1, E_2, \dots, E_n$ eventos arbitrarios:
+    $$ P(\cup_{i =1}^N E_i) = \sum_{i=1}^n P(E_i) - \sum_{(i, j) tuplas combinaciones de \{1, \dots, n\}}  + \sum_{(i, j, k) tuplas combinaciones de \{1, \dots, n\}}
+    \dots $$
+\end{Lemma}
+
+Con este lema se puede demostrar la monoticidad de la probabilidad para $I, J: I \subseteq J$
+Con esto a su vez se puede demostrar que:
+
+\begin{Lemma}{Lema de la subaditividad}
+    - $$Pr(\cup_{i \geq 1} E_i) \leq \sum_{i \geq 1} P(E_i)$$
+\end{Lemma}
+
+\begin{Lemma}{Eventos independientes}
+    -Decimos que $E, F$ son dos eventos independientes ssi:
+    $$P(E \cap F) = P(F) \cdot P(E) $$
+    Decimos que una coleccion $E_{n: 1\leq n \leq N}$ es mutuamente 
+    independiente ssi para cualquier forma de extraer elementos de $\{1, \dots, n\}$ entonces:
+    $$ P(\cap_{i \in I} E_i) = \prod_{i \in I} P(E_i)$$
+\end{Lemma}

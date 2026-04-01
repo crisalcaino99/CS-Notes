@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.14)  30 MAR 2026 23:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.14)  1 APR 2026 01:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Vicente/Desktop/CS Notes/misc/main.tex"
-(c:/Users/Vicente/Desktop/CS Notes/misc/main.tex
+**"c:/Users/Vicente/Desktop/CS Notes/probandcomp/main.tex"
+(c:/Users/Vicente/Desktop/CS Notes/probandcomp/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\Vicente\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -579,58 +579,13 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Label `def:-' multiply defined.
 
 
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
+LaTeX Warning: Label `lem:-' multiply defined.
 
 
 LaTeX Warning: Label `lem:-' multiply defined.
 
 
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
-
-
-LaTeX Warning: Label `def:-' multiply defined.
+LaTeX Warning: Label `lem:-' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -724,24 +679,9 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
  (C:\Users\Vicente\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (raw.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--23
+) (raw.tex [1
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--23
-
- []
-
-[1
-
-{C:/Users/Vicente/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3]) [4] (main.aux)
+{C:/Users/Vicente/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) [2] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -751,20 +691,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D3DF18153A74192333C0DFD944B39D93;901.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27720 strings out of 474485
- 562981 string characters out of 5742790
- 1952542 words of memory out of 5000000
- 49527 multiletter control sequences out of 15000+600000
- 565327 words of font info for 65 fonts, out of 8000000 for 9000
+ 27677 strings out of 474485
+ 562437 string characters out of 5742790
+ 1951542 words of memory out of 5000000
+ 49506 multiletter control sequences out of 15000+600000
+ 565020 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,7n,99p,458b,1016s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (4 pages, 193872 bytes).
+ 94i,7n,99p,465b,1113s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Vicente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (2 pages, 143805 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

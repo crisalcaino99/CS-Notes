@@ -1,0 +1,92 @@
+\documentclass[10pt]{article}
+
+% Paquetes necesarios
+\usepackage{amsmath}  % Para fórmulas matemáticas
+\usepackage{amsfonts} % Para fuentes matemáticas
+\usepackage{amssymb}  % Para símbolos matemáticos
+\usepackage{graphicx} % Para insertar imágenes
+\usepackage{geometry} % Para modificar márgenes
+\usepackage{hyperref} % Para enlaces en el documento
+\usepackage{xcolor} % Necesario para usar colores
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage[most, theorems]{tcolorbox}
+
+
+% Box base style
+\tcbset{
+  theoremstyle/.style={
+    enhanced,
+    colback=white,
+    colframe=black,
+    fonttitle=\bfseries,
+    coltitle=black,
+    boxrule=0.8pt,
+    arc=4pt,
+    left=6pt,
+    right=6pt,
+    top=6pt,
+    bottom=6pt,
+    breakable,
+    before upper={\ignorespaces},
+    after upper={\ignorespaces} % Ignora espacios finales
+  }
+}
+
+% Theorem
+\newtcbtheorem[number within=section]{Theorem}{Theorem}{
+  theoremstyle,
+  colback=blue!5!white,
+  colframe=blue!75!black
+}{th}
+
+% Lemma
+\newtcbtheorem[number within=section]{Lemma}{Lemma}{
+  theoremstyle,
+  colback=cyan!5!white,
+  colframe=cyan!75!black,
+  before upper={\unskip}
+}{lem}
+
+% Proposition
+\newtcbtheorem[number within=section]{Proposition}{Proposition}{
+  theoremstyle,
+  colback=purple!5!white,
+  colframe=purple!75!black,
+  before upper={\unskip}
+}{prop}
+
+% Corollary
+\newtcbtheorem[number within=section]{Corollary}{Corollary}{
+  theoremstyle,
+  colback=orange!5!white,
+  colframe=orange!75!black,
+  before upper={\unskip}
+}{cor}
+
+% Definition
+\newtcbtheorem[number within=section]{Definition}{Definition}{
+  theoremstyle,
+  colback=green!5!white,
+  colframe=green!60!black,
+  before upper={\unskip}
+}{def}
+
+% Configuración de márgenes
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+% Incluir comandos personalizados
+\input{style.tex}  % O \include{style} si prefieres, pero \input es mejor para pequeños archivos de comandos
+
+% Información de la tarea
+\title{Apuntes personales: Probabilidades y algoritmos}
+\author{Cristóbal Alcaíno}
+
+\begin{document}
+
+% Título de la tarea
+\maketitle
+
+\input{raw.tex}
+
+\end{document}
