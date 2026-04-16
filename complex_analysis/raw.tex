@@ -1,0 +1,84 @@
+\begin{Theorem}{Cauchy en el anillo}
+    - Sea $\gamma_2^+, \gamma_1^-$ un contorno, $f$ holomorfa en el y $z \in int(Contorno)$ 
+    $$\then f(z) = \int_{\gamma_2^+ + \gamma_1^-} \frac{f(w)}{w-z} dw $$
+\end{Theorem}
+
+\begin{Definition}{Singularidades}
+    - $D \subseteq \complex \;$ dominio, $f: D \to \complex$ holomorfa \\
+    Definimos las Singularidades como:
+    $$ S(f) = \{ p: p \in \partial D\}$$ 
+\end{Definition}
+
+\begin{Definition}{p - singularidad}
+    - $f: f$ es holomorfa en $B_p(r) - \{ p \}$
+    Entonces:
+    $$ p \;\text{es singularidad removible} \iff \lim_{z \to p} (z - p) f(z) = 0 $$
+    $$ p \;\text{es polo} \iff \exists m \geq 1 : \lim_{z \to p} (z-p)^{m+1} f(z) = 0 $$
+    $$ p \;\text{es polo simple} \iff p \; \text{es polo y} \; m = 1 $$
+    $$ p \;\text{es escencial} \iff \forall m \in \integers : \lim_{z \to p} (z-p)^{m+1} f(z) \neq 0 $$
+\end{Definition}
+
+\begin{Proposition}{Propiedades de holomorfa}
+    - $$ \;f \text{es holomorfa en } U \subset \complex \then f \in \mathcal{C}^\infty $$ 
+    $$ \;f \text{es holomorfa en } U \subset \complex \then \text{admite serie de potencias} $$
+\end{Proposition}
+
+\begin{Proposition}{Propiedades de la integral}
+    - $$ \frac{1}{2\pi i} \int_{\gamma} (z-z_0)^k dz = \begin{cases}
+        1 \; si \; k = -1 \\
+        0 \; eoc
+    \end{cases} $$
+    
+    $$ z = r e^{it}: \gamma(t) : [0, 2\pi] \then \int_\gamma \frac{1}{z} dz  = 2\pi i$$
+\end{Proposition}
+
+\begin{Theorem}{Serie de Laurent}
+ Sea $f$ holomorfa en $A_{z_0}(R_1,R_2)$. Entonces:
+
+    \begin{enumerate}
+        \item Existe una sucesión $\{a_n\}_{n\in\mathbb{Z}}$ tal que
+        \[
+            F(z):=\sum_{n\in\mathbb{Z}} a_n (z-z_0)^n
+        \]
+        converge absoluta y uniformemente a $f$ en compactos de $A_{z_0}(R_1,R_2)$.
+
+        \item Los coeficientes están dados por
+        \[
+            a_n=\frac{1}{2\pi i}\int_\gamma \frac{f(z)}{(z-z_0)^{n+1}}\,dz,
+        \]
+        donde $\gamma:[0,2\pi]\to\mathbb{C}$ está dada por
+        \[
+            \gamma(t)=z_0+re^{it}, \qquad r\in(R_1,R_2).
+        \]
+        Además, si existe otra sucesión $\{b_n\}_{n\in\mathbb{Z}}$ tal que
+        \[
+            f(z)=\sum_{n\in\mathbb{Z}} b_n (z-z_0)^n,
+        \]
+        entonces $b_n=a_n$ para todo $n\in\mathbb{Z}$.
+
+        \item Si definimos
+        \[
+            H(z):=\sum_{n\in\mathbb{Z}_{\ge 0}} a_n (z-z_0)^n,
+            \qquad
+            G(z):=\sum_{n\in\mathbb{Z}_{<0}} a_n (z-z_0)^n,
+        \]
+        entonces $H$ es holomorfa en $|z-z_0|<R_2$ y $G$ es holomorfa en $|z-z_0|>R_1$.
+    \end{enumerate}
+\end{Theorem}
+
+\begin{Proposition}{Sobre las signularidades}
+    - $f$ tiene p-singularidad y ademas $f = 1/g \then g(p) = 0 $
+    Luego p es polo simple $ \iff g'(p) \neq 0 $
+\end{Proposition}
+
+\begin{Corollary}{Corolario de Laurent}
+    - D dominio, $p \in D$, $f$ holomorfa en $D - \{ p \}$ tal que 
+    tomamos la serie. Si $ G(z) = 0 \then p \;$ es singularidad removible
+    \\
+    \\
+    Si $ 0 < | \{  n < 0 : a_n \neq 0 \} | < \infty \then $ p es polo y $\min  \{  n < 0 : a_n \neq 0 \} $ es su multiplicidad 
+    \\
+    \\
+    Si $| \{  n < 0 : a_n \neq 0 \} | = \infty \then $ p es singularidad escencial.
+
+\end{Corollary}

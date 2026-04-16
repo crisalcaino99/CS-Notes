@@ -28,6 +28,8 @@
     top=6pt,
     bottom=6pt,
     breakable,
+    before upper={\ignorespaces},
+    after upper={\ignorespaces} % Ignora espacios finales
   }
 }
 
@@ -43,6 +45,7 @@
   theoremstyle,
   colback=cyan!5!white,
   colframe=cyan!75!black,
+  before upper={\unskip}
 }{lem}
 
 % Proposition
@@ -50,6 +53,7 @@
   theoremstyle,
   colback=purple!5!white,
   colframe=purple!75!black,
+  before upper={\unskip}
 }{prop}
 
 % Corollary
@@ -57,6 +61,7 @@
   theoremstyle,
   colback=orange!5!white,
   colframe=orange!75!black,
+  before upper={\unskip}
 }{cor}
 
 % Definition
@@ -64,6 +69,7 @@
   theoremstyle,
   colback=green!5!white,
   colframe=green!60!black,
+  before upper={\unskip}
 }{def}
 
 % Configuración de márgenes
@@ -73,7 +79,7 @@
 \input{style.tex}  % O \include{style} si prefieres, pero \input es mejor para pequeños archivos de comandos
 
 % Información de la tarea
-\title{Apuntes personales: Probabilidades y algoritmos}
+\title{Apuntes personales: Análisis Real}
 \author{Cristóbal Alcaíno}
 
 \begin{document}

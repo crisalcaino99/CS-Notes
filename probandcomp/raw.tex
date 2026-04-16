@@ -27,6 +27,11 @@ Con esto a su vez se puede demostrar que:
     - $$Pr(\cup_{i \geq 1} E_i) \leq \sum_{i \geq 1} P(E_i)$$
 \end{Lemma}
 
+\begin{Lemma}{Monotonía de la probabilidad}
+    - $$ A \subset B \implies P(A) \leq P(B)$$ \\
+    $$ P(\cup_{m = n}^n A_m) \implies P(\cup_{m = n}^n A_m) \leq P(A_k) \quad \forall k \geq n \implies P(\cup_{m = n}^n A_m) \leq \liminf P(A_k) $$
+\end{Lemma}
+
 \begin{Lemma}{Eventos independientes}
     -Decimos que $E, F$ son dos eventos independientes ssi:
     $$P(E \cap F) = P(F) \cdot P(E) $$
@@ -34,3 +39,70 @@ Con esto a su vez se puede demostrar que:
     independiente ssi para cualquier forma de extraer elementos de $\{1, \dots, n\}$ entonces:
     $$ P(\cap_{i \in I} E_i) = \prod_{i \in I} P(E_i)$$
 \end{Lemma}
+
+\begin{Definition}{lim inf y lim sup}
+    - Definimos lim inf sobre $(A_n)_{n \in \naturals}$ como:
+    $${liminf}_{n \to \infty} (A_n) = \lim_{n \to \infty} \inf_{k \geq n} A_n = \cup_{n}^\infty \cap_{k \geq n}^\infty A_n $$
+\end{Definition} 
+Lim sup se define alternativamente.
+
+\begin{Lemma}{Continuidad de la probabilidad}
+    - Sea $(B_n)_{n \in \naturals}$ : $B_n \subseteq B_{n+1}$. Definimos $B = \lim_{n \to \infty} B_n = \cup_{n=1}^\infty B_n$.
+    $$\then P(\lim_{n \to \infty} B_n) = P(B) = \lim_{n \to \infty} P(B_n)$$
+\end{Lemma}
+
+\begin{Lemma}{Lemma de Fatou debil}
+    - $P(\liminf_{n \to \infty} A_n) \leq \liminf_{n \to \infty} P(A_n)$
+\end{Lemma}
+
+\begin{Definition}{Igualdad puntual fuerte}
+    - $X, Y: \Omega \to \reals $ son iguales si:
+    $$ X(w) = Y(w) \quad \forall w \in \Omega $$
+\end{Definition}
+
+\begin{Definition}{Igualdad casi seguramente}
+    - $X, Y \; c.s \; si \; \mathbb{P}(X \neq Y) = 0 $ \\
+    Que es equivalente a decir:
+    $ \mathbb{P} ( \{ w: X(w) = Y(w)\}) = 1$
+\end{Definition}
+
+
+\begin{Definition}{Igualdad en distribucion}
+    - $X =_d Y \iff \mathbb{P}(X \leq t) = \mathbb{P}(Y \leq t) \forall t $
+\end{Definition}
+
+\begin{Definition}{Densidad de X}
+    - (f): $f$ es densidad de $X$ v.a entonces $f$ es tal que:
+    $$ \mathbb{P}(X \in A) = \int_A f(x) dx $$
+\end{Definition}
+
+\begin{Proposition}{Sobre las densidades}
+    - Sea $f$ densidad de $X$. Luego:
+    $$ \bar{f} = \begin{cases}
+        f \; en \; X - \{ w_0\} \\
+        f + \epsilon \; en w_0
+    \end{cases}$$
+    entonces $\bar{f}$ sigue siendo densidad.
+\end{Proposition}
+
+\begin{Proposition}{Sobre las densidades}
+    -El conjunto de las densidades de $X$ es no numerable.
+\end{Proposition}
+
+\begin{Theorem}{Ley debil de los grandes numeros}
+    - Sea $\{ X_i \}_{i=1}^N$ v.a iid tal que $\mathbb{E}(X_i) = \mu \quad \forall i \in \{ 1 \dots N \}$
+    entonces:
+    $$ \frac{S_N}{N} \rightarrow \mu $$
+    Casi seguramente. Es decir:
+    $$ \forall \epsilon > 0 \exists N_0 \in \naturals : \forall n \geq N_0 : \mathbb{P}(| \frac{S_N}{N} - \mu | \geq \epsilon) \rightarrow 0$$
+\end{Theorem}
+
+\begin{Definition}{Propiedad tipo Hoeffding}
+    - Sea $(X_i)_{i=1}^N$ una coleccion de v.a iid. Sea $\vec{a} \in \reals^N$. Decimos que hay Hoeffding si:
+    $$ \exists c > 0 \forall \vec{a} \in \reals^N: \mathbb{P}(\sum_{i=1}^{N} a_i X_i \geq t )  \leq exp( \frac{-ct^2}{\sum_{i=1}^{N} a_i^2})$$
+\end{Definition}
+
+\begin{Proposition}{Hoeffding y la media}
+    - $ (X_i)_{i=1}^N $ v.a iid tal que $ \mathbb{E}(X_i) = \mu $ y que satisface Hoeffding
+    $\then \mathbb{E}(X_i) = 0$
+\end{Proposition}
