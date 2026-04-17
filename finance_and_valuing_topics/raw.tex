@@ -1,0 +1,23 @@
+\section{Un análisis rudimentario sobre la APV}
+Consideremos algunos parámetros de interes
+
+\begin{align}
+    A_1 &: \text{ aporte mensual (real) } \\
+    A_0 &: \text{ aporte inicial (real) } \\
+    r &: \text{ tasa rentabilidad anual (real) } \\
+    i &: \frac{r}{12} \text{ tasa interes mensual } \\
+    n &: \text{numero de meses }
+\end{align}
+
+Luego el valor neto de $A_0$ está dado por:
+$$ VA_1 @ n_{months} = \Big(  \frac{(1+i)^{n-1} - 1}{i}\Big) \cdot A_1 $$
+$$ VA_0 @ n_{months} = (1+i)^n \cdot A_0 $$
+
+La mecánica de la bonificacion es la siguiente:
+$$ B_y(A, Tope) = \min( 0.15 \cdot 12 \cdot A_1, Tope) $$
+$$ B @ n_{months} = \Big(  \frac{(1+i)^{\lfloor \frac{n}{12} \rfloor - 1} - 1}{i} \Big) \cdot B_y $$
+
+Luego eso induce que tengamos como valor final:
+$$ VT@n = B@n_{months} + VA_0 @ n_{months} + VA_1 @ n_{months} $$
+
+Llevemos esto a la práctica.
