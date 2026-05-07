@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1778174999.4494 "/home/tucarbackendpc/CS-Notes/real_analysis_self/main.tex" "main.pdf" "main" 1778174999.87836 0
+["pdflatex"] 1778176042.12112 "/home/tucarbackendpc/CS-Notes/real_analysis_self/main.tex" "main.pdf" "main" 1778176042.55761 0
   "/etc/texmf/web2c/texmf.cnf" 1778170256.60193 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/tucarbackendpc/CS-Notes/real_analysis_self/main.tex" 1777319224.21077 2103 3b3fb71f4495a7e573a1d87c8bd9662d ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -31,7 +31,9 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -185,10 +187,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1778170270 5541477 3118940318599480888143717dd32d64 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1778170289 3638840 ca2fcdd5b30e6c6c89ae18a0945c754d ""
-  "main.aux" 1778174999.84227 445 93d3520538fe8c7f26a97aef0faf5d71 "pdflatex"
-  "main.out" 1778174999.84227 195 f44fbbab0c0eadf972f588dee98972ca "pdflatex"
+  "main.aux" 1778176042.52077 536 6023449f7fc5adf1e06bec20dc62b136 "pdflatex"
+  "main.out" 1778176042.52077 195 f44fbbab0c0eadf972f588dee98972ca "pdflatex"
   "main.tex" 1777319224.21077 2103 3b3fb71f4495a7e573a1d87c8bd9662d ""
-  "raw.tex" 1778174998.73029 600 261da69c938b613f8a5b0d5845e7f3e2 ""
+  "raw.tex" 1778176041.39179 753 f7cd768d4b783263dc3c60f0226db282 ""
   "style.tex" 1777319224.21077 412 57c1342c442b8e783e88e2f1e0082238 ""
   (generated)
   "main.aux"
