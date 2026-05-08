@@ -1,11 +1,24 @@
 \section{Algunas notas sobre análisis}
 
 // Lema de urysohn
+\begin{Definition}{Espacio normal}
+    -- Decimos que X es normal si:
+    $$ \forall A, B \subseteq X: A = \bar{A}, B = \bar{B} \then \exists U, V opens: A 
+    \subseteq U, B \subseteq V, U \cap V = \emptyset $$
+\end{Definition}
+
+\begin{Lemma}{Lema de Urysohn}
+    -- Sea X normal, A, B $\subseteq$ cerrados disjuntos 
+    $$\then \exists f : f: X \to [0, 1] \text{continua} $$
+    tal que 
+    $$ f|_A = 0, f|_B = 1 $$ 
+\end{Lemma}
 
 
 \begin{Theorem}{Stone - Weierstrass}
-    - X: $X$ es compacto, $\mathcal{A}$ es subalgebra de $\mathcal{C}(X, \reals)
-    \then A $ es denso $\iff A $ separa puntos y no se desvanece nunca.
+    -- $A \subseteq \mathcal{C}(X, \reals)_{|.|_\infty}$
+    tal que A contiene a las constantes y para cualquier funcion $f \in A$ separa puntos
+    $\then \bar{A}^{||.||_\infty} = \mathcal{C}(X, \reals)$ 
 \end{Theorem}
 
 // extension y ejemplos notables
