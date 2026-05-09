@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1778267905.15146 "/home/tucarbackendpc/CS-Notes/real_analysis_self/main.tex" "main.pdf" "main" 1778267906.61031 0
+["pdflatex"] 1778343840.71468 "/home/tucarbackendpc/CS-Notes/real_analysis_self/main.tex" "main.pdf" "main" 1778343841.40682 0
   "/etc/texmf/web2c/texmf.cnf" 1778170256.60193 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/tucarbackendpc/CS-Notes/real_analysis_self/main.tex" 1777319224.21077 2103 3b3fb71f4495a7e573a1d87c8bd9662d ""
+  "/home/tucarbackendpc/CS-Notes/real_analysis_self/main.tex" 1778343840.53668 2178 dfb584ffcaf38f4522e83438830b8f2f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -188,10 +188,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1778170270 5541477 3118940318599480888143717dd32d64 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1778170289 3638840 ca2fcdd5b30e6c6c89ae18a0945c754d ""
-  "main.aux" 1778267906.45448 670 4a44b9d863415fcdeac21a904b7cc65d "pdflatex"
-  "main.out" 1778267906.45648 195 f44fbbab0c0eadf972f588dee98972ca "pdflatex"
-  "main.tex" 1777319224.21077 2103 3b3fb71f4495a7e573a1d87c8bd9662d ""
-  "raw.tex" 1778267903.07404 1241 d82642c022faa39be4f0dfbb791e400d ""
+  "main.aux" 1778343841.36551 670 4a44b9d863415fcdeac21a904b7cc65d "pdflatex"
+  "main.out" 1778343841.36651 195 f44fbbab0c0eadf972f588dee98972ca "pdflatex"
+  "main.tex" 1778343840.53668 2178 dfb584ffcaf38f4522e83438830b8f2f ""
+  "raw.tex" 1778343807.00395 1264 ee5b13a820d0684491ca685d4be2498b ""
   "style.tex" 1777319224.21077 412 57c1342c442b8e783e88e2f1e0082238 ""
   (generated)
   "main.aux"
