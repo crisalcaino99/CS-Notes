@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1778343150.12826 "/home/tucarbackendpc/CS-Notes/complex_analysis/main.tex" "main.pdf" "main" 1778343150.71674 0
+["pdflatex"] 1778458027.2675 "/home/tucarbackendpc/CS-Notes/complex_analysis/main.tex" "main.pdf" "main" 1778458028.11295 0
   "/etc/texmf/web2c/texmf.cnf" 1778170256.60193 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/tucarbackendpc/CS-Notes/complex_analysis/main.tex" 1778343138.48278 2224 49f5d441e98ad218a83b95577bf4c96d ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -192,11 +192,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1778170270 5541477 3118940318599480888143717dd32d64 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1778170289 3638840 ca2fcdd5b30e6c6c89ae18a0945c754d ""
-  "gamma.tex" 1778343149.11438 507 e3569a7995fb309c89b5282599c7384c ""
-  "main.aux" 1778343150.6686 2073 f24200f549ece7def71b01cb635a2558 "pdflatex"
-  "main.out" 1778343150.6686 601 7925387d6493d0c7f5c2a3989c206c78 "pdflatex"
+  "gamma.tex" 1778458027.0853 889 62fc50822bca4e6572f8a5066847b38b ""
+  "main.aux" 1778458028.06824 2273 7f0f7a2127aafcf86f31427fee133f8a "pdflatex"
+  "main.out" 1778458028.06824 601 7925387d6493d0c7f5c2a3989c206c78 "pdflatex"
   "main.tex" 1778343138.48278 2224 49f5d441e98ad218a83b95577bf4c96d ""
-  "preliminares.tex" 1778339104.17958 1279 a395d94a73572e3f21cda62eca96d3f7 ""
+  "preliminares.tex" 1778457969.13592 1310 4d792754094e781e786e6bd3ab9a8953 ""
   "raw.tex" 1778338979.98975 3243 6132e34250bbeffa4908d4af5ef21f6d ""
   "style.tex" 1777319224.208 412 57c1342c442b8e783e88e2f1e0082238 ""
   (generated)
